@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -14,6 +14,15 @@
       href="https://fonts.googleapis.com/css2?family=Barrio&family=Dancing+Script:wght@400;500;600&family=Merriweather:wght@300;400;700;900&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Poiret+One&family=Sacramento&family=Ubuntu+Mono:wght@400;700&family=Ubuntu:wght@300;400;500;700&display=swap"
       rel="stylesheet"
     />
+    <!-- icons-->
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/uicons-solid-rounded/css/uicons-solid-rounded.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/cbaf5cde04.js"
+      crossorigin="anonymous"
+    ></script>
     <!-- tailwind config -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -41,6 +50,7 @@
                 500: "#212529",
               },
               primary: "#222222",
+              primary2: "#151515",
               secondary: "#121212",
               accent: "#EF002E",
             },
@@ -49,12 +59,6 @@
       };
     </script>
     <!--todo  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" /> -->
-
-    <!-- icons-->
-    <script
-      src="https://kit.fontawesome.com/cbaf5cde04.js"
-      crossorigin="anonymous"
-    ></script>
   </head>
   <body class="bg-primary text-grey-200 font-Montserrat">
     <!--? navbar bottom  -->
@@ -125,18 +129,14 @@
       <div
         class="flex flex-col lg:text-[1.49rem] xl:text-[1.7rem] 2xl:text-[1.85rem] lg:mt-20 mb-24"
       >
-        <div
-          class="font-bold pl-3 w-[100%] hover:bg-primary py-6 bg-opacity-60 backdrop-filter backdrop-blur-lg"
-        >
+        <div class="font-bold pl-3 w-[100%] hover:bg-primary py-6">
           <a href="#home"
             ><i class="fa-solid fa-house-chimney"></i>
             <span class="pl-2">Home</span></a
           >
         </div>
 
-        <div
-          class="font-bold pl-1 w-[100%] hover:bg-primary py-4 bg-opacity-60 backdrop-filter backdrop-blur-lg"
-        >
+        <div class="font-bold pl-1 w-[100%] hover:bg-primary py-4">
           <a class="flex items-center" href="#about">
             <img
               class="lg:w-10 xl:w-12 2xl:w-14"
@@ -147,17 +147,13 @@
           >
         </div>
 
-        <div
-          class="font-bold pl-3 w-[100%] hover:bg-primary py-6 bg-opacity-60 backdrop-filter backdrop-blur-lg"
-        >
+        <div class="font-bold pl-3 w-[100%] hover:bg-primary py-6">
           <a href="#work"
             ><i class="fa-solid fa-briefcase"></i>
             <span class="pl-2">Work</span></a
           >
         </div>
-        <div
-          class="font-bold pl-3 w-[100%] hover:bg-primary pt-6 bg-opacity-60 backdrop-filter backdrop-blur-lg"
-        >
+        <div class="font-bold pl-3 w-[100%] hover:bg-primary py-6">
           <a href="#contact"
             ><i class="fa-solid fa-message"></i>
             <span class="pl-2">Contact</span></a
@@ -275,45 +271,118 @@
       class="bg-primary2 xs:h-[100vh] sm:h-[100vh] sm:ml-[3.5rem] md:ml-[4.5rem] lg:ml-[10rem] xl:ml-[11rem] 2xl:ml-[12rem]"
     >
       <div
-        class="pt-16 pl-10 text-5xl font-extrabold text-grey-200 xs:hidden sm:block"
+        class="h-[15%] pt-16 pl-10 text-4xl xl:text-5xl font-extrabold text-grey-200 xs:hidden sm:block lg:tracking-wider"
       >
         About
       </div>
-      <div
-        class="py-10 pl-6 pr-8 grid sm:grid-cols-3 gap-6 text-[1.5rem] font-bold"
-      >
+
+      <div class="h-[80%] lg:pl-2 lg:pr-4 xl:pl-8 xl:pr-10">
+        <!--todo    cards  -->
+
         <div
-          class="flex flex-col items-center bg-primary p-5 rounded-xl bg-opacity-60 backdrop-filter backdrop-blur-lg"
+          class="h-1/2 py-10 pl-6 pr-8 grid sm:grid-cols-3 gap-6 xl:gap-8 2xl:gap-12 text-[1.3rem] md:text-[1.4rem] font-bold lg:tracking-wide"
         >
-          <i
-            class="text-[2.5rem] pb-4 text-accent fi fi-sr-tachometer-alt-fastest"
-          ></i>
-          Fast
-          <p class="font-normal text-lg text-center pt-2">
-            Fast load times and lag free interaction, my highest priority.
-          </p>
-        </div>
-        <div
-          class="flex flex-col items-center bg-primary p-5 rounded-xl bg-opacity-60 backdrop-filter backdrop-blur-lg"
-        >
-          <div class="text-[2.1rem] pb-4 text-accent">
-            <i class="fa-solid fa-mobile-screen-button"></i>
-            <i class="fa-solid fa-arrow-right-arrow-left"></i>
-            <i class="fa-solid fa-laptop"></i>
+          <div
+            class="flex flex-col items-center bg-primary py-5 px-3 md:px-5 rounded-xl bg-opacity-70"
+          >
+            <i
+              class="text-[2.2rem] xl:text-[2.7rem] md:text-[2.4rem] 2xl:text-[3rem] py-2 text-accent fi fi-sr-tachometer-alt-fastest"
+            ></i>
+            <p class="2xl:text-3xl">Fast</p>
+            <p
+              class="tracking-normal font-normal text-base xl:text-lg xl:tracking-wide text-center pt-2"
+            >
+              Fast load times and lag free interaction, my highest priority.
+            </p>
           </div>
-          Responsive
-          <p class="font-normal text-lg text-center pt-2">
-            My layouts will work on any device, big or small.
-          </p>
+          <div
+            class="flex flex-col items-center bg-primary py-5 px-3 md:px-5 rounded-xl bg-opacity-70"
+          >
+            <div
+              class="text-[2rem] md:text-[2.2rem] xl:text-[2.7rem] 2xl:text-[3rem] py-2 text-accent"
+            >
+              <i class="fa-solid fa-mobile-screen-button"></i>
+              <i class="fa-solid fa-arrow-right-arrow-left"></i>
+              <i class="fa-solid fa-laptop"></i>
+            </div>
+            <p class="2xl:text-[1.8rem]">Responsive</p>
+            <p
+              class="tracking-normal font-normal text-base xl:text-lg xl:tracking-wide text-center pt-2"
+            >
+              My layouts will work on any device, big or small.
+            </p>
+          </div>
+          <div
+            class="flex flex-col items-center bg-primary py-5 px-3 md:px-5 rounded-xl bg-opacity-70"
+          >
+            <i
+              class="text-[2.2rem] md:text-[2.4rem] xl:text-[2.7rem] 2xl:text[3rem] py-2 text-accent fi fi-sr-following"
+            ></i>
+            <p class="2xl:text-[1.8rem]">Intuitive</p>
+            <p
+              class="tracking-normal font-normal text-base xl:text-lg xl:tracking-wide text-center pt-2"
+            >
+              Strong preference for easy to use, intuitive UX/UI.
+            </p>
+          </div>
         </div>
-        <div
-          class="flex flex-col items-center bg-primary p-5 rounded-xl bg-opacity-60 backdrop-filter backdrop-blur-lg"
-        >
-          <i class="text-[2.5rem] pb-4 text-accent fi fi-sr-following"></i>
-          Intuitive
-          <p class="font-normal text-lg text-center pt-2">
-            Strong preference for easy to use, intuitive UX/UI.
-          </p>
+
+        <!--todo    bio and skill bar -->
+
+        <div class="h-1/2 pt-5 flex sm:flex-row ml-6 xs:flex-col">
+          <div
+            class="w-1/2 text-lg font-medium md:text-[1.2rem] lg:tracking-wide md:leading-8 lg:leading-9 xl:text-[1.45rem] xl:tracking-wider xl:leading-10"
+          >
+            I'm a Full Stack developer. I'm hard-working and self-motivated and
+            exploring ways to increase knowledge in Web Development.
+            <div
+              class="sm:w-[9rem] lg:w-[11rem] text-center xs:w-2/5 bg-transparent hover:bg-accent text-accent font-bold hover:text-grey-50 py-2.5 lg:py-4 border border-accent hover:border-transparent rounded mt-10 ml-4"
+            >
+              Resume
+            </div>
+          </div>
+          <div class="mx-5 grid w-1/2 gap-5 pr-4">
+            <div class="flex bg-primary bg-opacity-70 h-3/5 items-center">
+              <div
+                class="bg-accent w-1/2 h-full font-extrabold pl-2 text-primary lg:text-lg"
+              >
+                HTML
+              </div>
+              <div class="text-right w-1/2">50%</div>
+            </div>
+            <div class="flex bg-primary bg-opacity-70 h-3/5 items-center">
+              <div
+                class="bg-accent w-1/2 h-full font-extrabold pl-2 text-primary lg:text-lg"
+              >
+                CSS
+              </div>
+              <div class="text-right w-1/2">50%</div>
+            </div>
+            <div class="flex bg-primary bg-opacity-70 h-3/5 items-center">
+              <div
+                class="bg-accent w-1/2 h-full font-extrabold pl-2 text-primary lg:text-lg"
+              >
+                Js
+              </div>
+              <div class="text-right w-1/2">50%</div>
+            </div>
+            <div class="flex bg-primary bg-opacity-70 h-3/5 items-center">
+              <div
+                class="bg-accent w-1/2 h-full font-extrabold pl-2 text-primary lg:text-lg"
+              >
+                Vue.js
+              </div>
+              <div class="text-right w-1/2">50%</div>
+            </div>
+            <div class="flex bg-primary bg-opacity-70 h-3/5 items-center">
+              <div
+                class="bg-accent w-1/2 h-full font-extrabold pl-2 text-primary lg:text-lg"
+              >
+                Photoshop
+              </div>
+              <div class="text-right w-1/2">50%</div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -322,22 +391,94 @@
 
     <div
       id="work"
-      class="xs:h-[100vh] sm:h-hull sm:ml-24 md:ml-[6.5rem] lg:ml-[10rem] xl:ml-[11rem] 2xl:ml-[12rem]"
+      class="bg-primary xs:h-[100vh] sm:h-[100vh] sm:ml-[3.5rem] md:ml-[4.5rem] lg:ml-[10rem] xl:ml-[11rem] 2xl:ml-[12rem] flex flex-col justify-evenly"
     >
-      <div class="text-4xl font-extrabold text-grey-200 xs:hidden sm:block">
-        Portfolio
+      <!--todo    Heading -->
+      <div class="h-[20%] pt-10 pl-10 text-grey-200">
+        <div
+          class="text-4xl xl:text-5xl font-extrabold xs:hidden sm:block lg:tracking-wider"
+        >
+          Portfolio
+        </div>
+        <div class="p-4 text-xl">A small galary of projects chosen by me.</div>
+      </div>
+      <!--todo    project grid -->
+      <div class="h-[70%] grid sm:grid-cols-2 lg:grid-cols-3 px-10 gap-6">
+        <div class="bg-red-300"></div>
+        <div class="bg-red-300"></div>
+        <div class="bg-red-300"></div>
+        <div class="bg-red-300"></div>
+        <div class="bg-red-300"></div>
+        <div class="bg-red-300"></div>
       </div>
     </div>
-
     <!--?   CONTACT SECTION  -->
 
     <div
       id="contact"
-      class="xs:h-[100vh] sm:h-hull sm:ml-24 md:ml-[6.5rem] lg:ml-[10rem] xl:ml-[11rem] 2xl:ml-[12rem]"
+      class="bg-primary2 xs:h-[100vh] sm:h-[100vh] sm:ml-[3.5rem] md:ml-[4.5rem] lg:ml-[10rem] xl:ml-[11rem] 2xl:ml-[12rem] flex flex-col text-grey-200"
     >
-      <div class="text-4xl font-extrabold text-grey-200 xs:hidden sm:block">
-        Contact me
+      <!--todo    Heading -->
+      <div class="h-[30%] pt-20 pl-10">
+        <div
+          class="text-4xl xl:text-5xl font-extrabold xs:hidden sm:block lg:tracking-wider"
+        >
+          Contact
+        </div>
+        <div class="py-10 px-4 text-[1.7rem] tracking-wide">
+          Have a question or want to work together?
+        </div>
       </div>
+      <!--todo    form -->
+      <div class="sm:h-[65%] px-10 flex justify-center items-center">
+        <form class="flex flex-col w-[40rem] space-y-6" action="">
+          <input
+            class="bg-primary rounded-xl bg-opacity-70 sm:py-4 text-2xl font-semibold pl-5 border-accent border-2"
+            type="text"
+            placeholder="Name"
+          />
+          <input
+            class="bg-primary rounded-xl bg-opacity-70 py-6 text-2xl font-semibold pl-5 border-accent border-2"
+            type="email"
+            placeholder="Email"
+          />
+
+          <textarea
+            class="bg-primary rounded-xl bg-opacity-70 py-6 text-2xl font-semibold pl-5 border-accent border-2"
+            name=""
+            id="textbox"
+            cols="30"
+            rows="6"
+            placeholder="Message"
+          ></textarea>
+        </form>
+      </div>
+    </div>
+
+    <!--? footer  -->
+
+    <div
+      id="footer"
+      class="h-[20vh] bg-black bg-opacity-60 sm:ml-[3.5rem] md:ml-[4.5rem] lg:ml-[10rem] xl:ml-[11rem] 2xl:ml-[12rem] text-grey-200 text-xl flex flex-col items-center justify-center space-y-7"
+    >
+      <div class="flex text-4xl space-x-9">
+        <div>
+          <a href="https://www.linkedin.com/in/ashutosh-gairola/"
+            ><i class="fa-brands fa-linkedin"></i
+          ></a>
+        </div>
+        <div>
+          <a href="https://www.instagram.com/asg_ashutosh/"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
+        </div>
+        <div>
+          <a href="https://github.com/ashutoshgairola"
+            ><i class="fa-brands fa-github"></i
+          ></a>
+        </div>
+      </div>
+      <div>@Ashutosh Gairola</div>
     </div>
   </body>
 </html>
