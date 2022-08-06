@@ -1,3 +1,21 @@
+// navbar
+var menu = document.querySelector("#menu");
+var closeIcon = document.querySelector("#close");
+var burger = document.querySelector("#burger");
+
+burger.addEventListener("click", function () {
+  menu.classList.remove("hidden");
+
+  burger.classList.add("hidden");
+});
+
+closeIcon.addEventListener("click", function () {
+  menu.classList.add("hidden");
+
+  burger.classList.remove("hidden");
+});
+
+// timer
 var min = 0;
 var sec = 0;
 var interval;
