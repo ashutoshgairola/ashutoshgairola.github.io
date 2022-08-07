@@ -200,7 +200,7 @@
           ></a>
         </div>
         <div
-          class="cursor-pointer p-4 text-xl font-medium hover:font-bold border-l-4 border-emerald-400"
+          class="cursor-pointer p-4 text-xl font-bold border-l-4 border-emerald-400"
         >
           <a href="stopwatch.html"
             >StopWatch <i class="text-3xl fa-solid fa-stopwatch"></i
@@ -215,37 +215,56 @@
     <!-- <div class="text-emerald-400 text-center text-6xl py-10 font-bold">
       Hey, I'm Stopwatch!
     </div> -->
-    <div class="flex py-14 justify-center mt-28 xs:hidden">
-      <div class="w-2/6">
+    <div class="flex py-14 justify-center sm:mt-10 xs:mt-10">
+      <div class="w-2/6 xs:hidden sm:block">
         <img
           src="https://media.giphy.com/media/QAgJ5z3FJhPp2xUDiS/giphy.gif"
           alt=""
         />
       </div>
-      <div class="w-1/2 text-gray-400 flex flex-col space-y-20 mt-20">
-        <div class="flex text-[6rem] text-center">
-          <div id="min" class="w-[27.9%] px-5 bg-stone-800 rounded-2xl">00</div>
+      <div
+        class="sm:w-1/2 xs:w-full text-gray-400 flex flex-col space-y-20 sm:mt-20 xs:mt-10"
+      >
+        <div class="flex sm:text-[6rem] xs:text-[3rem] xs:mx-4 text-center">
+          <div
+            id="min"
+            class="w-[27.9%] sm:px-5 xs:px-2 bg-stone-800 rounded-2xl"
+          >
+            00
+          </div>
           <div class="w-[8%] text-emerald-400 animate-pulse">:</div>
-          <div id="sec" class="w-[27.9%] px-5 bg-stone-800 rounded-2xl">00</div>
+          <div
+            id="sec"
+            class="w-[27.9%] sm:px-5 xs:px-2 bg-stone-800 rounded-2xl"
+          >
+            00
+          </div>
           <div class="w-[8%] text-emerald-400 animate-pulse">:</div>
-          <div id="ms" class="w-[27.9%] px-5 bg-stone-800 rounded-2xl">00</div>
+          <div
+            id="ms"
+            class="w-[27.9%] sm:px-5 xs:px-2 bg-stone-800 rounded-2xl"
+          >
+            00
+          </div>
         </div>
-        <div class="h=4/6 flex space-x-10 justify-center">
+        <div
+          class="h=4/6 flex sm:flex-row xs:flex-col sm:space-x-10 xs:items-center sm:space-y-0 xs:space-y-10 justify-center text-center"
+        >
           <div
             id="startWatch"
-            class="cursor-pointer py-5 px-10 bg-stone-800 text-emerald-400 text-3xl rounded-2xl hover:bg-emerald-400 hover:text-gray-900 font-bold"
+            class="cursor-pointer xs:w-1/2 py-5 px-10 bg-stone-800 text-emerald-400 text-3xl rounded-2xl hover:bg-emerald-400 hover:text-gray-900 font-bold"
           >
             Start
           </div>
           <div
             id="stopWatch"
-            class="cursor-pointer py-5 px-10 bg-stone-800 text-emerald-400 text-3xl rounded-2xl hover:bg-emerald-400 hover:text-gray-900 font-bold"
+            class="cursor-pointer xs:w-1/2 py-5 px-10 bg-stone-800 text-emerald-400 text-3xl rounded-2xl hover:bg-emerald-400 hover:text-gray-900 font-bold"
           >
             Stop
           </div>
           <div
             id="resetWatch"
-            class="cursor-pointer py-5 px-10 bg-stone-800 text-emerald-400 text-3xl rounded-2xl hover:bg-emerald-400 hover:text-gray-900 font-bold"
+            class="cursor-pointer xs:w-1/2 py-5 px-10 bg-stone-800 text-emerald-400 text-3xl rounded-2xl hover:bg-emerald-400 hover:text-gray-900 font-bold"
           >
             Reset
           </div>

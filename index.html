@@ -184,13 +184,13 @@
 
       <div
         id="menu"
-        class="hidden h-full w-[70%] fixed right-0 top-0 z-10 bg-black font-bold text-emerald-400 py-4 space-y-10"
+        class="hidden h-full w-[70%] opacity-90 fixed z-20 right-0 top-0 z-10 bg-black font-bold text-emerald-400 py-4 space-y-10"
       >
         <div id="close" class="text-right px-8 text-5xl pb-4">
           <i class="fa-solid fa-xmark"></i>
         </div>
         <div
-          class="cursor-pointer p-4 text-xl font-medium hover:font-bold border-l-4 border-emerald-400"
+          class="cursor-pointer p-4 text-xl font-bold border-l-4 border-emerald-400"
         >
           <a href="index.html"
             >Clock <i class="text-3xl fa-solid fa-clock"></i
@@ -211,45 +211,55 @@
         </div>
       </div>
     </div>
+
     <!-- clock -->
-    <div class="xs:hidden flex my-10 justify-center space-x-40">
+
+    <div class="flex sm:my-10 xs:my-28 justify-center space-x-40">
       <div class="flex justify-center items-center relative">
         <div class="absolute z-10 rounded-2xl w-4 h-4 bg-stone-400"></div>
         <div
-          class="absolute flex z-7 top-[9.3rem] w-[0.55rem] h-[8.2rem] bg-emerald-400 origin-bottom"
+          class="absolute flex z-0 sm:top-[10.5rem] xs:top-[7.9rem] w-[0.55rem] sm:h-[7rem] xs:h-[4.5rem] bg-emerald-400 origin-bottom"
           id="hr"
         ></div>
         <div
-          class="absolute z-8 top-[7.6rem] w-[0.45rem] h-[10rem] bg-emerald-400 origin-bottom"
+          class="absolute z-0 sm:top-[8.1rem] xs:top-[7.1rem] w-[0.45rem] sm:h-[9.5rem] xs:h-[5.5rem] bg-emerald-400 origin-bottom"
           id="min"
         ></div>
         <div
-          class="absolute z-9 top-[6rem] w-[0.3rem] h-[14rem] bg-red-500 origin-[center_81%]"
+          class="absolute z-0 sm:top-[7rem] xs:top-[5.4rem] w-[0.3rem] sm:h-[13rem] xs:h-[8.5rem] bg-red-500 origin-[center_81%]"
           id="sec"
         ></div>
-        <div class="absolute text-4xl bg-stone-900 text-emerald-400 top-10">
+        <div
+          class="absolute text-4xl bg-stone-900 text-emerald-400 sm:top-10 xs:top-5"
+        >
           12
         </div>
         <div
-          class="absolute text-4xl bg-stone-900 text-emerald-400 top-50 right-10"
+          class="absolute text-4xl bg-stone-900 text-emerald-400 top-50 sm:right-10 xs:right-5"
         >
           3
         </div>
         <div
-          class="absolute text-4xl bg-stone-900 text-emerald-400 top-50 left-10"
+          class="absolute text-4xl bg-stone-900 text-emerald-400 top-50 sm:left-10 xs:left-5"
         >
           9
         </div>
-        <div class="absolute text-4xl bg-stone-900 text-emerald-400 bottom-10">
+        <div
+          class="absolute text-4xl bg-stone-900 text-emerald-400 sm:bottom-10 xs:bottom-5"
+        >
           6
         </div>
         <img class="w-[35rem]" src="images/clock.png" alt="" />
       </div>
-      <div class="w-[36%] text-stone-200">
+
+      <div class="sm:block w-[36%] text-stone-200 xs:hidden text-center">
         <div class="mt-20 text-3xl">
-          Hey, I'm Sands of <span class="text-emerald-400">Time</span>.
+          Hey, I'm <span class="text-emerald-400">Hour</span>glass.
         </div>
-        <div class="mt-20 ml-10">
+        <div class="mt-5 text-xl">
+          I keep track of <span class="text-emerald-400">time</span>.
+        </div>
+        <div class="mt-20 ml-20">
           <div id="hourglass">
             <svg
               width="400px"
@@ -314,6 +324,39 @@
         </div>
       </div>
     </div>
+    <!-- clock phone  -->
+    <!-- <div class="xs:flex sm:hidden justify-center items-center relative">
+      <div class="absolute z-10 rounded-2xl w-4 h-4 bg-stone-400"></div>
+      <div
+        class="absolute flex z-7 top-[9.3rem] w-[0.55rem] h-[4.1rem] bg-emerald-400 origin-bottom"
+        id="hr"
+      ></div>
+      <div
+        class="absolute z-8 top-[7.6rem] w-[0.45rem] h-[5rem] bg-emerald-400 origin-bottom"
+        id="min"
+      ></div>
+      <div
+        class="absolute z-9 top-[6rem] w-[0.3rem] h-[7rem] bg-red-500 origin-[center_81%]"
+        id="sec"
+      ></div>
+      <div class="absolute text-4xl bg-stone-900 text-emerald-400 top-5">
+        12
+      </div>
+      <div
+        class="absolute text-4xl bg-stone-900 text-emerald-400 top-50 right-5"
+      >
+        3
+      </div>
+      <div
+        class="absolute text-4xl bg-stone-900 text-emerald-400 top-50 left-5"
+      >
+        9
+      </div>
+      <div class="absolute text-4xl bg-stone-900 text-emerald-400 bottom-5">
+        6
+      </div>
+      <img class="w-[35rem]" src="images/clock.png" alt="" />
+    </div> -->
     <script src="index.js"></script>
   </body>
 </html>

@@ -31,7 +31,9 @@
       };
     </script>
   </head>
-  <body class="h-full bg-stone-900 font-['orbitron'] tracking-[0.4rem]">
+  <body
+    class="sm:h-full xs:h-screen bg-stone-900 font-['orbitron'] tracking-[0.4rem]"
+  >
     <div
       id="navbar"
       class="w-screen flex justify-between items-center bg-black px-5 xs:py-2 text-5xl text-emerald-400"
@@ -195,7 +197,7 @@
           ></a>
         </div>
         <div
-          class="cursor-pointer p-4 text-xl font-medium hover:font-bold border-l-4 border-emerald-400"
+          class="cursor-pointer p-4 text-xl font-bold border-l-4 border-emerald-400"
         >
           <a href="timer.html"
             >Timer <i class="text-3xl fa-solid fa-hourglass-half"></i
@@ -215,57 +217,65 @@
     <!-- <div class="text-emerald-400 text-center text-6xl py-10 font-bold">
       Hey, I'm Timer!
     </div> -->
-    <div class="flex py-14 justify-center mt-28 xs:hidden">
-      <div id="imgDiv" class="w-2/6">
+    <div class="sm:flex xs:block py-14 justify-center sm:mt-8 xs:mt-10">
+      <div id="imgDiv" class="w-2/6 xs:hidden sm:block">
         <img
           class="w-full"
           src="https://media.giphy.com/media/tmcChGcHQUhsDXI3Jx/giphy.gif"
           alt=""
         />
       </div>
-      <div class="w-1/2 text-gray-400 flex flex-col space-y-16 mt-5">
-        <div class="flex space-x-10 justify-center">
+      <div
+        class="sm:w-1/2 xs:w-screen text-gray-400 flex flex-col sm:space-y-16 xs:space-y-24 sm:mt-5"
+      >
+        <div class="flex sm:space-x-10 xs:space-x-4 mx-4 justify-center">
           <div
             id="min25"
-            class="cursor-pointer py-5 text-center bg-stone-800 text-emerald-400 text-md px-4 rounded-2xl hover:bg-emerald-400 hover:text-gray-900 font-semi-bold"
+            class="cursor-pointer sm:px-5 xs:py-5 text-center bg-stone-800 text-emerald-400 sm:text-md xs:text-sm rounded-2xl hover:bg-emerald-400 hover:text-gray-900 font-semi-bold"
           >
             +25 Mins
           </div>
           <div
             id="min15"
-            class="cursor-pointer py-5 text-center bg-stone-800 text-emerald-400 text-md px-4 rounded-2xl hover:bg-emerald-400 hover:text-gray-900 font-semi-bold"
+            class="cursor-pointer sm:px-5 xs:py-5 text-center bg-stone-800 text-emerald-400 sm:text-md xs:text-sm rounded-2xl hover:bg-emerald-400 hover:text-gray-900 font-semi-bold"
           >
             +15 Mins
           </div>
           <div
             id="min5"
-            class="cursor-pointer py-5 text-center bg-stone-800 text-emerald-400 text-md px-4 rounded-2xl hover:bg-emerald-400 hover:text-gray-900 font-semi-bold"
+            class="cursor-pointer sm:px-5 xs:py-5 text-center bg-stone-800 text-emerald-400 sm:text-md xs:text-sm rounded-2xl hover:bg-emerald-400 hover:text-gray-900 font-semi-bold"
           >
             +5 Mins
           </div>
           <div
             id="min1"
-            class="cursor-pointer py-5 text-center bg-stone-800 text-emerald-400 text-md px-4 rounded-2xl hover:bg-emerald-400 hover:text-gray-900 font-semi-bold"
+            class="cursor-pointer sm:px-5 xs:py-5 text-center bg-stone-800 text-emerald-400 sm:text-md xs:text-sm rounded-2xl hover:bg-emerald-400 hover:text-gray-900 font-semi-bold"
           >
             +1 Mins
           </div>
         </div>
-        <div class="flex text-[8rem] justify-center text-center">
-          <div id="min" class="px-5 bg-stone-800 rounded-2xl">00</div>
+        <div
+          class="flex sm:text-[8rem] xs:text-[5rem] justify-center text-center"
+        >
+          <div id="min" class="sm:px-5 xs:px-2 bg-stone-800 rounded-2xl">
+            00
+          </div>
           <div class="w-[8%] text-emerald-400 animate-pulse">:</div>
-          <div id="sec" class="px-5 bg-stone-800 rounded-2xl">00</div>
+          <div id="sec" class="sm:px-5 xs:px-2 bg-stone-800 rounded-2xl">
+            00
+          </div>
         </div>
         <div class="h=4/6 flex space-x-10 justify-center">
           <div
             id="startTimer"
-            class="cursor-pointer py-5 px-10 bg-stone-800 text-emerald-400 text-3xl rounded-2xl hover:bg-emerald-400 hover:text-gray-900 font-bold"
+            class="cursor-pointer py-5 sm:px-10 xs:px-6 bg-stone-800 text-emerald-400 sm:text-3xl xs:text-xl rounded-2xl hover:bg-emerald-400 hover:text-gray-900 font-bold"
           >
             Start
           </div>
 
           <div
             id="resetTimer"
-            class="cursor-pointer py-5 px-10 bg-stone-800 text-emerald-400 text-3xl rounded-2xl hover:bg-emerald-400 hover:text-gray-900 font-bold"
+            class="cursor-pointer py-5 sm:px-10 xs:px-6 bg-stone-800 text-emerald-400 sm:text-3xl xs:text-xl rounded-2xl hover:bg-emerald-400 hover:text-gray-900 font-bold"
           >
             Reset
           </div>
